@@ -5,7 +5,7 @@ import { useState } from "react";
 function NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="navbar bg-neutral text-neutral-content justify-between ">
+    <nav className="sticky top-0 navbar bg-neutral text-neutral-content justify-between z-30 ">
       <Link
         className="btn btn-ghost normal-case text-xl z-20 md:h-auto h-20 "
         to="/"
@@ -23,12 +23,20 @@ function NavBar() {
         {!open ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="url(#RadialGradient)"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
             className="w-7 h-7"
           >
+            <defs>
+              <radialGradient id="RadialGradient">
+                <stop offset="0%" stop-color="yellow-300" />
+                <stop offset="50%" stop-color="orange-400" />
+                <stop offset="100%" stop-color="red-500" />
+              </radialGradient>
+            </defs>
+
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -38,7 +46,7 @@ function NavBar() {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
+            fill="url(#RadialGradient)"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
@@ -116,17 +124,27 @@ function NavBar() {
       {/* Mobile Nav Dropdown */}
 
       <ul
-        className={`md:hidden flex-col bg-neutral absolute w-3/4 h-full bottom-0 z-10 py-24 ml-48 duration-500 ${
+        className={`md:hidden flex-col bg-neutral fixed w-3/4 h-full bottom-0 z-10 py-24 ml-48 duration-500 ${
           open ? "right-0" : "right-[-100%]"
         } `}
       >
-        <li className="menu menu-vertical ">
-          <Link
-            to="/about"
-            className="uppercase font-bold text-xl py-7 px-3 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent"
-          >
-            About
-          </Link>
+        <li className="menu menu-vertical w-full p-1">
+          <div className="collapse collapse-plus border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+            <input type="checkbox" className="w-auto h-auto" />
+            <div className="collapse-title text-xl uppercase font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+              About
+            </div>
+            <div className="collapse-content">
+              <ul className="p-2 bg-inherit text-left">
+                <li>
+                  <a>Submenu 1</a>
+                </li>
+                <li>
+                  <a>Submenu 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <Link
             to="/contact"
             className="uppercase font-bold text-xl py-7 px-3 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent"
@@ -134,43 +152,15 @@ function NavBar() {
             Contact
           </Link>
         </li>
+        <Link
+          to="/book"
+          className="uppercase font-bold text-xl m-1 bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black py-7 px-4 w-full rounded-box"
+        >
+          Book
+        </Link>
       </ul>
     </nav>
   );
 }
 
 export default NavBar;
-
-<button className="collapse max-w-5 " tabIndex={0}>
-  <div className="collapse-title text-xl font-medium pr-0 ">
-    <label className="btn btn-circle swap swap-rotate ">
-      {/* <!-- this hidden checkbox controls the state --> */}
-      <input type="checkbox" className="opacity-0" />
-
-      {/* <!-- hamburger icon --> */}
-      <svg
-        className="swap-off fill-current"
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 512 512"
-      >
-        <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-      </svg>
-
-      {/* <!-- close icon --> */}
-      <svg
-        className="swap-on fill-current"
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 512 512"
-      >
-        <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-      </svg>
-    </label>
-  </div>
-  <div className="collapse-content">
-    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
-  </div>
-</button>;

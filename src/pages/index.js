@@ -67,9 +67,9 @@ export default function Home() {
               fun, bond with friends, and create unforgettable memories. Book
               your room today and see if you have what it takes to escape! */}
             </p>
-            {/* <button className="btn bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
-              Get Started
-            </button> */}
+            <button className="md:hidden mt-2 btn bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              Book Now
+            </button>
           </div>
         </div>
       </div>

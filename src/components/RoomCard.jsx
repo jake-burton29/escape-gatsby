@@ -1,11 +1,13 @@
 import { GatsbyImage } from "gatsby-plugin-image";
-
+import { Link } from "gatsby";
+import { useState } from "react";
 import React from "react";
 
 const RoomCard = (props) => {
+  const [isShowing, setIsShowing] = useState(false);
   return (
-    <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-3xl my-3 ">
-      <div className="md:flex md:bg-slate-300 sm:bg-slate-100">
+    <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-3xl my-3 group">
+      <div className="md:flex md:bg-neutral sm:bg-slate-100">
         <div className="md:shrink-0">
           <GatsbyImage
             className="h-fit w-full  md:h-full md:w-48"
@@ -13,11 +15,11 @@ const RoomCard = (props) => {
             alt={props.alt}
           />
         </div>
-        <div className="p-4 bg-slate-300">
+        <div className="p-4 bg-neutral">
           <h2 className="card-title text-bold bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent">
             {props.title}
           </h2>
-          <p className="block mt-1 text-lg leading-tight font-medium text-black ">
+          <p className="block mt-1 text-lg leading-tight font-medium text-gray-400 ">
             {props.players}
             <br />
             {props.length}
@@ -25,10 +27,20 @@ const RoomCard = (props) => {
             {props.cost}
           </p>
           <div className="card-actions justify-end pt-2">
-            <button className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+            <Link
+              to="/book"
+              className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black"
+            >
               Book
-            </button>
-            <button className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+            </Link>
+            <button
+              id="moreInfo"
+              className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black "
+              onClick={() => {
+                const element = document.querySelector("#moreInfo");
+                element.classList.add("my-rotate-180", "duration-1000");
+              }}
+            >
               More Info
             </button>
           </div>
