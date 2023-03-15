@@ -31,14 +31,17 @@ export default function ContactForm() {
   const handleSubmit = (values, { resetForm, setSubmitting }) => {
     axios({
       method: "post",
-      url: "/",
-      data: values,
+      url: "/.netlify/functions/contact",
+      body: JSON.stringify(values),
     })
-      .then(() => {
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
         alert("Thank you for your message! We will be in touch soon.");
         resetForm();
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error);
         alert("Sorry, there was an error submitting your message.");
       })
       .finally(() => {
