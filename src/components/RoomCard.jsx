@@ -1,12 +1,14 @@
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { useState } from "react";
+import { useTimeoutFn } from "react-use";
 import React from "react";
 
 const RoomCard = (props) => {
   const [isShowing, setIsShowing] = useState(false);
+  let [, , resetIsShowing] = useTimeoutFn(() => setIsShowing(true), 500);
   return (
-    <div className="max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-3xl my-3 group">
+    <div className="max-w-md mx-auto rounded-xl shadow-neutral shadow-lg overflow-hidden md:max-w-3xl my-3 group">
       <div className="md:flex md:bg-neutral sm:bg-slate-100">
         <div className="md:shrink-0">
           <GatsbyImage

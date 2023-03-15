@@ -1,13 +1,16 @@
 import React from "react";
-
+import { Link } from "gatsby";
 const Footer = () => {
   return (
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
       <div className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <Link to="/about" className="link link-hover">
+          About us
+        </Link>
+        <Link to="/contact" className="link link-hover">
+          Contact
+        </Link>
+        <a className="link link-hover">Reviews</a>
       </div>
       <div>
         <div className="grid grid-flow-col gap-4">

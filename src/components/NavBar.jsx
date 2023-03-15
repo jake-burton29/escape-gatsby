@@ -17,26 +17,17 @@ function NavBar() {
         />
       </Link>
       <button
-        className="md:hidden btn btn-ghost btn-circle z-20"
+        className="md:hidden btn btn-circle z-20 text-orange-400 border-orange-400"
         onClick={() => setOpen(!open)}
       >
         {!open ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="url(#RadialGradient)"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
             className="w-7 h-7"
           >
-            <defs>
-              <radialGradient id="RadialGradient">
-                <stop offset="0%" stop-color="yellow-300" />
-                <stop offset="50%" stop-color="orange-400" />
-                <stop offset="100%" stop-color="red-500" />
-              </radialGradient>
-            </defs>
-
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -46,7 +37,6 @@ function NavBar() {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="url(#RadialGradient)"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
@@ -78,13 +68,10 @@ function NavBar() {
             </Link>
             <ul className="p-2 bg-base-100  ">
               <li>
-                <a>Our Rooms</a>
-              </li>
-              <li>
                 <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <a>Dirk's Interview</a>
+                <Link to="/sanitation">Sanitation & Health</Link>
               </li>
             </ul>
           </li>
@@ -104,10 +91,10 @@ function NavBar() {
             </Link>
             <ul className="p-2 bg-base-100">
               <li>
-                <a>Submenu 1</a>
+                <a href="tel:4356040556">Call Us</a>
               </li>
               <li>
-                <a>Submenu 2</a>
+                <Link to="contact">Email us</Link>
               </li>
             </ul>
           </li>
@@ -128,36 +115,55 @@ function NavBar() {
           open ? "right-0" : "right-[-100%]"
         } `}
       >
-        <li className="menu menu-vertical w-full p-1">
-          <div className="collapse collapse-plus border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+        <li className="menu menu-vertical w-full p-2 m-1">
+          <div className="collapse collapse-plus border border-orange-300 bg-neutral rounded-box text-orange-400">
             <input type="checkbox" className="w-auto h-auto" />
             <div className="collapse-title text-xl uppercase font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
               About
             </div>
             <div className="collapse-content">
-              <ul className="p-2 bg-inherit text-left">
+              <ul className="p-2 bg-inherit text-left text-lg">
                 <li>
-                  <a>Submenu 1</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <Link to="/faq">FAQ</Link>
+                </li>
+                <li>
+                  <Link to="/sanitation">Sanitation & Health</Link>
                 </li>
               </ul>
             </div>
           </div>
+
+          <div className="collapse collapse-plus border border-orange-300 bg-neutral rounded-box text-orange-400">
+            <input type="checkbox" className="w-auto h-auto" />
+            <div className="collapse-title text-xl uppercase font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+              Contact
+            </div>
+            <div className="collapse-content">
+              <ul className="p-2 bg-inherit text-left text-lg">
+                <li>
+                  <a href="tel:4356040556">Call Us</a>
+                </li>
+                <li>
+                  <Link to="/sanitation">Sanitation & Health</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <progress
+            className="progress bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 w-auto m-6"
+            value={0}
+            max="100"
+          ></progress>
           <Link
-            to="/contact"
-            className="uppercase font-bold text-xl py-7 px-3 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent"
+            to="/book"
+            className="uppercase font-bold text-center text-3xl m-1 ml-auto mr-auto bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black py-7 px-4 w-7/12 rounded-box textarea-md"
           >
-            Contact
+            Book
           </Link>
         </li>
-        <Link
-          to="/book"
-          className="uppercase font-bold text-xl m-1 bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black py-7 px-4 w-full rounded-box"
-        >
-          Book
-        </Link>
       </ul>
     </nav>
   );

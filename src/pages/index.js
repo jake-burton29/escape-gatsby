@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import RoomCard from "../components/RoomCard";
 import ReviewCarousel from "../components/ReviewCarousel";
+import RoomCardBack from "../components/RoomCardBack";
 import { graphql, useStaticQuery } from "gatsby";
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -104,6 +105,7 @@ export default function Home() {
         players="This room is"
         length="currently closed."
       />
+      <RoomCardBack />
       <ReviewCarousel
         image1={data.review1.childImageSharp.gatsbyImageData}
         image2={data.review2.childImageSharp.gatsbyImageData}
