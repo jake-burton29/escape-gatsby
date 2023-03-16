@@ -147,7 +147,7 @@ function NavBar() {
                   <a href="tel:4356040556">Call Us</a>
                 </li>
                 <li>
-                  <Link to="/sanitation">Sanitation & Health</Link>
+                  <Link to="/contact">Message Us</Link>
                 </li>
               </ul>
             </div>

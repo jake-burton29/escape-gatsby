@@ -30,8 +30,8 @@ export default function ContactForm() {
   });
   const handleSubmit = (values, { resetForm, setSubmitting }) => {
     axios({
-      method: "post",
-      url: "/.netlify/functions/contact",
+      method: "POST",
+      url: `/.netlify/functions/contact`,
       body: JSON.stringify(values),
     })
       .then((res) => res.json())

@@ -1,8 +1,8 @@
 const { send } = require("nodemailer");
 
 exports.handler = async (event) => {
-  const { firstName, lastName, company, email, phoneNumber, message } =
-    JSON.parse(event.body);
+  console.log("THIS IS TOTALLY", event);
+  const { firstName, lastName, email, message } = JSON.parse(event.body);
 
   try {
     const response = await send({
