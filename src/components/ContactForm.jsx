@@ -41,6 +41,7 @@ export default function ContactForm() {
         alert(
           "Thank you for your message. We will get back to you shortly!",
           reset()
+          // navigate("/")   cant decide which one to dol
         )
       )
       .catch((error) => alert(error));
@@ -54,7 +55,10 @@ export default function ContactForm() {
         </h2>
         <p className="mt-2 text-lg leading-8">
           Call&nbsp;
-          <a href="tel:4356040556" className="font-semibold link-primary">
+          <a
+            href="tel:4356040556"
+            className="font-semibold text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 underline underline-offset-2"
+          >
             435-604-0556
           </a>
           &nbsp;with questions.

@@ -15,15 +15,15 @@ const faq = () => {
               435-604-0556.
             </p>
           </div>
-          <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 mt-2">
             <div class="w-full lg:w-1/2 px-4 py-2">
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text">
                   What is this?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     Escape Room Park City is an adventure game with interactive
                     puzzles where you and your team use wits, problem-solving,
                     and teamwork to find clues, solve challenges, and escape the
@@ -31,25 +31,25 @@ const faq = () => {
                   </p>
                 </div>
               </div>
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   Are you part of a chain, or a franchise?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     Nope! We are literally a mom-and-pop operation, with every
                     room dreamed up and designed by the owners.
                   </p>
                 </div>
               </div>
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   How do I get to the escape room?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     There is parking all around us. It is a bit confusing but
                     there is a parking garage and uncovered lots. Please pay
                     attention to the signage as Park City is consistently trying
@@ -64,13 +64,13 @@ const faq = () => {
               </div>
             </div>
             <div class="w-full lg:w-1/2 px-4 py-2">
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   Is it true that the games are challenging?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     Yes, it's true, but it wouldn't be fun if they weren't. Game
                     Masters help you through the room offering clues so that you
                     don't get too frustrated. Our ultimate goal is to make sure
@@ -78,13 +78,13 @@ const faq = () => {
                   </p>
                 </div>
               </div>
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   Can children play?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     Families have an amazing time! Children are welcome but may
                     be distracting to other players, so please indicate their
                     ages on your reservation. Children 18 years old or younger
@@ -101,13 +101,13 @@ const faq = () => {
                   </p>
                 </div>
               </div>
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   How many can be in our group?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     The Mine Trap room plays best for teams of 6-10 adults and
                     kids; the Travel Room plays best for teams of 4-6, our
                     Parlor plays best for teams of 4 to 6 players and the Pirate
@@ -122,26 +122,26 @@ const faq = () => {
               </div>
             </div>
             <div class="w-full lg:w-1/2 px-4 py-2">
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl  font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl  font-bold py-7 px-4 inline-block bg-clip-text  ">
                   Do you really lock people in?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     Nope! While commonly called "escape rooms," we don't
                     actually lock anyone in. The door you enter is always
                     unlocked, and you can walk out at any time.
                   </p>
                 </div>
               </div>
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   Claustrophobic? Not a problem
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     If you are able to visit a doctor's office, you will be fine
                     in our Escape Rooms. None of our rooms have confined spaces
                     and ceiling heights are normal. Once you are in the room the
@@ -151,13 +151,13 @@ const faq = () => {
                   </p>
                 </div>
               </div>
-              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
                 <input type="checkbox" className="w-auto h-auto" />
-                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 ">
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
                   What else should I keep in mind?
                 </div>
                 <div className="collapse-content">
-                  <p>
+                  <p className="text-lg">
                     Please remember, drinking and thinking can be dangerous. You
                     want a clear mind to play this game. We reserve the right to
                     eject anyone who we feel may be a danger to themselves or

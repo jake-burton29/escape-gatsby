@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { useState } from "react";
+import MapButton from "./MapButton";
 function NavBar() {
   const [open, setOpen] = useState(false);
   return (
@@ -71,6 +72,12 @@ function NavBar() {
                 <Link to="/faq">FAQ</Link>
               </li>
               <li>
+                <Link to="/reviews">Reviews</Link>
+              </li>
+              <li>
+                <Link to="/location">Location</Link>
+              </li>
+              <li>
                 <Link to="/sanitation">Sanitation & Health</Link>
               </li>
             </ul>
@@ -94,7 +101,7 @@ function NavBar() {
                 <a href="tel:4356040556">Call Us</a>
               </li>
               <li>
-                <Link to="contact">Email us</Link>
+                <Link to="/contact">Email us</Link>
               </li>
             </ul>
           </li>
@@ -111,7 +118,7 @@ function NavBar() {
       {/* Mobile Nav Dropdown */}
 
       <ul
-        className={`md:hidden flex-col bg-neutral fixed w-3/4 h-full bottom-0 z-10 py-24 ml-48 duration-500 ${
+        className={`md:hidden flex-col bg-neutral fixed w-3/4 h-full bottom-0 z-10 py-24 ml-48 duration-500 overflow-y-scroll ${
           open ? "right-0" : "right-[-100%]"
         } `}
       >
@@ -130,7 +137,13 @@ function NavBar() {
                   <Link to="/faq">FAQ</Link>
                 </li>
                 <li>
+                  <Link to="/reviews">Reviews</Link>
+                </li>
+                <li>
                   <Link to="/sanitation">Sanitation & Health</Link>
+                </li>
+                <li>
+                  <Link to="/location">Location</Link>
                 </li>
               </ul>
             </div>
@@ -151,6 +164,28 @@ function NavBar() {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="button-group flex justify-center w-auto h-auto mt-3 gap-3">
+            <a
+              href="tel:4356040556"
+              className="btn btn-circle border border-orange-300 text-orange-400 "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </a>
+            <MapButton
+              address={"136 Heber Ave #207, Park City, UT 84068"}
+            ></MapButton>
           </div>
           <progress
             className="progress bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 w-auto m-6"
