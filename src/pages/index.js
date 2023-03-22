@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import RoomCard from "../components/RoomCard";
 import ReviewCarousel from "../components/ReviewCarousel";
 import RoomCardBack from "../components/RoomCardBack";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 export default function Home() {
   const data = useStaticQuery(graphql`
     query {
@@ -68,9 +68,12 @@ export default function Home() {
               fun, bond with friends, and create unforgettable memories. Book
               your room today and see if you have what it takes to escape! */}
             </p>
-            <button className="md:hidden mt-2 btn bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black">
+            <Link
+              to="/book"
+              className="md:hidden mt-3 btn bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black"
+            >
               Book Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>

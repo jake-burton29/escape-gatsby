@@ -10,9 +10,14 @@ const faq = () => {
               Frequently Asked Questons
             </h2>
             <p className="mt-2 mb-1 text-lg leading-7">
-              If you're question isn't here, contact us at
-              info@escaperoomparkcity.com or <br />
-              435-604-0556.
+              If you're question isn't here,contact us <br /> at
+              info@escaperoomparkcity.com <br /> or call&nbsp;
+              <a
+                href="tel:4356040556"
+                className="font-semibold text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 underline underline-offset-2"
+              >
+                435-604-0556
+              </a>
             </p>
           </div>
           <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 mt-2">

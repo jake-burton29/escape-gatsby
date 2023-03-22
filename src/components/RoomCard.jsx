@@ -23,6 +23,7 @@ const RoomCard = (props) => {
           <div className="md:flex md:bg-neutral sm:bg-slate-100">
             <div className="md:shrink-0">
               <GatsbyImage
+                loading="lazy"
                 className="h-fit w-full  md:h-full md:w-48"
                 image={props.imageData}
                 alt={props.alt}
@@ -64,6 +65,7 @@ const RoomCard = (props) => {
           <div className="md:flex md:bg-neutral sm:bg-slate-100">
             <div className="md:shrink-0">
               <GatsbyImage
+                loading="lazy"
                 className="h-fit w-full  md:h-full md:w-48"
                 image={props.imageData}
                 alt={props.alt}

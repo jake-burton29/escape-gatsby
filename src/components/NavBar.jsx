@@ -6,7 +6,7 @@ import MapButton from "./MapButton";
 function NavBar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="sticky top-0 navbar bg-neutral text-neutral-content justify-between z-30 ">
+    <nav className="sticky -top-10 md:-top-0 navbar bg-neutral text-neutral-content justify-between z-30 pt-10 -mt-10 md:py-2 md:-mt-0 mb-5 ">
       <Link
         className="btn btn-ghost normal-case text-xl z-20 md:h-auto h-20 "
         to="/"
