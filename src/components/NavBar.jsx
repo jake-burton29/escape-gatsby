@@ -3,18 +3,11 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { useState } from "react";
 import MapButton from "./MapButton";
-import { Helmet } from "react-helmet";
+
 function NavBar() {
   const [open, setOpen] = useState(false);
   return (
     <div className="pt-constant(safe-area-inset-top)">
-      <Helmet>
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
-      </Helmet>
       <nav className="sticky top-0 navbar bg-neutral text-neutral-content justify-between z-30 ">
         <Link
           className="btn btn-ghost normal-case text-xl z-20 md:h-auto h-20 "

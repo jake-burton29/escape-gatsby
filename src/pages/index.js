@@ -118,3 +118,15 @@ export default function Home() {
     </Layout>
   );
 }
+export function Head() {
+  return (
+    <>
+      <title>Escape Room Park City</title>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      />
+    </>
+  );
+}
