@@ -1,0 +1,63 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "title": "Great family outing!",
+      "author": "Hoagy",
+      "date": "March 17, 2023",
+      "rating": 5,
+      "content": "Fabulous time; kids (10 and 9) loved the Mine room! Great way to spend an afternoon off the slopes. Dirk and crew were terrific in helping us but also letting us figure things out!",
+      "platform": "Trip Advisor"
+    },
+
+    {
+      "id": 2,
+      "title": "Livermore, CA",
+      "author": "Kristina M.",
+      "date": "March 17, 2023",
+      "rating": 5,
+      "content": "What an incredible and fun experience! We are a multigenerational bunch who worked together to solve the murder mystery. Hints were given so we wouldn't get stuck or go completely down the wrong path. We've only done two escape rooms, and this was by far the best of the two.",
+      "platform": "Yelp"
+    },
+    {
+      "id": 3,
+      "title": "Great escape room!",
+      "author": "Vincent O.",
+      "date": "February 19, 2023",
+      "rating": 5,
+      "content": "A great escape room! We (three adults) did the Parlor - murder mystery. The room was a lot of fun, with all sorts of puzzles. The puzzles ranged in scale and type, and they were arranged in parallel so that different groups of people could do different puzzles at the same time. We've done dozens of escape rooms, and this is one of our favorites. Highly recommend!",
+      "platform": "Trip Advisor"
+    },
+    {
+      "id": 4,
+      "title": "Great memories and family fun",
+      "author": "Jade D.",
+      "date": "January 13, 2023",
+      "rating": 5,
+      "content": "We have been to Escape Room Park City twice. We did the Mine Trap as a family with our three oldest, ages 11, 9, and 7. We had a fantastic time and took our oldest back to do The Parlor with his friends for his 12th birthday. Highly recommend!",
+      "platform": "Trip Advisor"
+    },
+    {
+      "id": 5,
+      "title": "A blast for the entire family",
+      "author": "Ellen G.",
+      "date": "January 1, 2023",
+      "rating": 5,
+      "content": "We had the best time! I thought the puzzles were challenging but well suited for different ages and levels. We have 12-19 in ages and everyone had a blast.",
+      "platform": "Trip Advisor",
+      "image": {
+        "src": "../images/EllenGReview.jpg",
+        "alt": "A blast for the entire family"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Ski vacation",
+      "author": "Bryan S.",
+      "date": "",
+      "rating": 5,
+      "content": "Park City escapes rooms was amazing. Pirates Booty escape room was well done and a lot of fun. We will do another room next time we visit Park City. Many in our group thought it was their favorite escape room to date. A must do if you are in the area.",
+      "platform": "Trip Advisor"
+    }
+  ]
+}
