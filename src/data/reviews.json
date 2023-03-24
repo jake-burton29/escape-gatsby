@@ -7,7 +7,8 @@
       "date": "March 17, 2023",
       "rating": 5,
       "content": "Fabulous time; kids (10 and 9) loved the Mine room! Great way to spend an afternoon off the slopes. Dirk and crew were terrific in helping us but also letting us figure things out!",
-      "platform": "Trip Advisor"
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r882455070-Escape_Room_Park_City-Park_City_Utah.html"
     },
 
     {
@@ -26,7 +27,8 @@
       "date": "February 19, 2023",
       "rating": 5,
       "content": "A great escape room! We (three adults) did the Parlor - murder mystery. The room was a lot of fun, with all sorts of puzzles. The puzzles ranged in scale and type, and they were arranged in parallel so that different groups of people could do different puzzles at the same time. We've done dozens of escape rooms, and this is one of our favorites. Highly recommend!",
-      "platform": "Trip Advisor"
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r879272788-Escape_Room_Park_City-Park_City_Utah.html"
     },
     {
       "id": 4,
@@ -35,7 +37,8 @@
       "date": "January 13, 2023",
       "rating": 5,
       "content": "We have been to Escape Room Park City twice. We did the Mine Trap as a family with our three oldest, ages 11, 9, and 7. We had a fantastic time and took our oldest back to do The Parlor with his friends for his 12th birthday. Highly recommend!",
-      "platform": "Trip Advisor"
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r875007628-Escape_Room_Park_City-Park_City_Utah.html"
     },
     {
       "id": 5,
@@ -48,16 +51,174 @@
       "image": {
         "src": "../images/EllenGReview.jpg",
         "alt": "A blast for the entire family"
-      }
+      },
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r873573565-Escape_Room_Park_City-Park_City_Utah.html"
     },
     {
       "id": 6,
       "title": "Ski vacation",
       "author": "Bryan S.",
-      "date": "",
+      "date": "December 28, 2022",
       "rating": 5,
       "content": "Park City escapes rooms was amazing. Pirates Booty escape room was well done and a lot of fun. We will do another room next time we visit Park City. Many in our group thought it was their favorite escape room to date. A must do if you are in the area.",
-      "platform": "Trip Advisor"
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r873094875-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 7,
+      "title": "Super Fun Thanksgiving Week Outing!",
+      "author": "Janene C.",
+      "date": "November 28, 2022",
+      "rating": 5,
+      "content": "This was the best escape room we've ever done. We appreciated the help when help was needed. The detail that went into this room was impressive! My kids said this was one of their most favorite parts of our Park City getaway.",
+      "platform": "Trip Advisor",
+      "image": {
+        "src": "../images/JaneneCReview.jpg",
+        "alt": "Super Fun Thanksgiving Week Outing!"
+      },
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r873094875-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 8,
+      "title": "Team Building Fun",
+      "author": "Candaceaud",
+      "date": "October 31, 2022",
+      "rating": 5,
+      "content": "While in the area for a corporate event, was able to secure a reservation easily. Fun and engaging way to complete a team building activity. Would return again for personal or business use.",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r866690944-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 9,
+      "title": "Fun Fun Family Time!",
+      "author": "Mama Wendy",
+      "date": "October 14, 2022",
+      "rating": 5,
+      "content": "We have gone to a few different Escape Rooms and this was our favorite! The oldest in our party was 52 and the youngest was 16. So fun! Very clever use of props. We did the PC Mine room. My daughter did the Pirate Room a few weeks ago and she loved it! Dirk was a great host. He left very clever hints. We'll definitely return!",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r864543651-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 10,
+      "title": "Escape Room Fun",
+      "author": "FWF N",
+      "date": "September 12, 2022",
+      "rating": 5,
+      "content": "We celebrated our daughter's 9 birthday on Sun with a group of family! We did the pirate room and it was a blast! The room itself was so detailed and cool! We did escape with the help of a few clues! I would highly recommend this experience!",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r859810926-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 11,
+      "title": "Super fun family experience!!",
+      "author": "369californiagirl",
+      "date": "July 24, 2022",
+      "rating": 5,
+      "content": "We did Escape Room Park City's Mine Trap room this week to celebrate my birthday and thoroughly enjoyed our time. We had my two teens, my husband, and parents (70s) and there was something for everyone! We have done a few escape rooms before and this was the best- well thought out, well constructed, exciting and fun! We did need some clues to help us at times but would highly recommend. 5 star experience! Thank you Escape Room Park City!",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r849626919-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 12,
+      "title": "Awesome Family Experience",
+      "author": "FellowTraveler755107",
+      "date": "July 19, 2022",
+      "rating": 5,
+      "content": "We had such a blast escaping from the Silver Mine! The game was challenging, creative and great with our 4 adults and 2 kids (12 + 9). Highly recommend!",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r848760769-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 13,
+      "title": "Would do another one again!!",
+      "author": "Ttklein40",
+      "date": "July 8, 2022",
+      "rating": 5,
+      "content": "We had an absolute blast doing the miners escape room. We made it thru with 5 minutes to go. The 90 minutes flew by. There were all kinds of puzzles- jigsaw, logic, map and others. I highly recommend this for a fun evening. Also Portia was absolutely fantastic helping us.",
+      "platform": "Trip Advisor",
+      "image": {
+        "src": "../images/TtkleinReview.jpg",
+        "alt": "Would do another one again!!"
+      },
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r846902741-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 14,
+      "title": "A good time with me mateys",
+      "author": "memoholland",
+      "date": "April 10, 2022",
+      "rating": 5,
+      "content": "Our group of 8 escaped from the Pirate's Booty room. The clues were unique, varied, and fairly challenging. We had a great time!",
+      "platform": "Trip Advisor",
+      "image": {
+        "src": "../images/MemohollandReview.jpg",
+        "alt": "A good time with me mateys"
+      },
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r834067655-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 15,
+      "title": "Fun Evening with Adult Kids",
+      "author": "Serenamom",
+      "date": "April 4, 2022",
+      "rating": 5,
+      "content": "Pirate Adventure was so fun and just the right amount of difficulty for our family of 8 - each used their own set of skills to solve the riddles - great entertainment and Parker was a good instructor!",
+      "platform": "Trip Advisor",
+      "image": {
+        "src": "../images/SerenamomReview.jpg",
+        "alt": "Fun Evening with Adult Kids"
+      },
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r833447961-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 16,
+      "title": "Best Family Fun",
+      "author": "Diane",
+      "date": "March 17, 2022",
+      "rating": 5,
+      "content": "Wow! This far exceeded our expectations. We have two girls (10 and 12) and we weren’t sure they would enjoy this, but it was a highlight of our week. We did the Minetrap room and the entire time our girls were engrossed with trying to figure out the clues. What made the experience was Dirk, as he kept us on track and provided clues when he saw we were losing it. Pure fun for adults and the kids. Would 100% recommend!",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r831492740-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 17,
+      "title": "Terrific way to spend an hour",
+      "author": "tyegator",
+      "date": "March 16, 2022",
+      "rating": 5,
+      "content": "Had a great time! Extremely well done. Great puzzles. Fun afternoon with friends. Did The Parlor whodunit which allowed the 5 of us to have the room to ourselves.",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r831392590-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 18,
+      "title": "So much fun!!",
+      "author": "Sean O.",
+      "date": "February 21, 2022",
+      "rating": 5,
+      "content": "Excellent from start to finish! Intro was good, our guide was engaging, room was creative, fun and challenging. The clues were helpful without giving too much away. We had a really large group and there were enough challenges to keep everyone as busy as they wanted to be. Our group ranged in age from 16-62 (2 families) and everyone had a chance to contribute.",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r828768532-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 19,
+      "title": "Family fun",
+      "author": "Arthur E.",
+      "date": "January 20, 2022",
+      "rating": 5,
+      "content": "The 6 of us in our family really enjoyed the mine room. It was a lot of fun. While we found it challenging it was very do able. Ea h one of us contributed a fairly significant part which was really nice.",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r825473797-Escape_Room_Park_City-Park_City_Utah.html"
+    },
+    {
+      "id": 20,
+      "title": "Park City escape Room - great activity in Park City",
+      "author": "Ross D.",
+      "date": "January 16, 2022",
+      "rating": 5,
+      "content": "The room was very creative and challenging. The staff was friendly, fun, and professional. Best activity in Park City.",
+      "platform": "Trip Advisor",
+      "link": "https://www.tripadvisor.com/ShowUserReviews-g57097-d10403313-r825126685-Escape_Room_Park_City-Park_City_Utah.html"
     }
   ]
 }
