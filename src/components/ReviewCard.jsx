@@ -2,10 +2,10 @@ import React from "react";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 
 const ReviewCard = ({ review, image }) => {
-  const { title, rating, author, content, platform, link, date } = review;
-  console.log(title);
+  const { title, rating, author, content, platform, link, date, id } = review;
+  console.log(id);
   return (
-    <div className="card lg:card-side bg-slate-100 shadow-xl text-black my-6 max-w-full md:mx-24 pb-0 ">
+    <div className="card bg-slate-100 shadow-xl text-black my-6 max-w-full md:mx-24 pb-0 xl:mx-56 ">
       <div className="card-body">
         <a
           href={link}
@@ -15,7 +15,9 @@ const ReviewCard = ({ review, image }) => {
         >
           {title}
         </a>
-        <p>{author}</p>
+        <p>
+          <span className="font-semibold"> by: </span> <span>{author}</span>
+        </p>
         {rating === 5 && (
           <div className="rating">
             <input
@@ -46,19 +48,51 @@ const ReviewCard = ({ review, image }) => {
           </div>
         )}
         <p> {content}</p>
-        <p>Date: {date}</p>
-        <p>From: {platform}</p>
+        <div className="flex justify-between items-center">
+          <div className="flex-col">
+            <p>Date: {date}</p>
+            <p>From: {platform}</p>
+          </div>
+          {image && (
+            <div>
+              <figure className="ml-auto rounded-xl  md:m-4 w-[140px]">
+                <label htmlFor={`my-modal-${id}`}>
+                  <GatsbyImage
+                    loading="lazy"
+                    className="min-w-full min-h-fit hover:opacity-70"
+                    image={getImage(image.src.childImageSharp.gatsbyImageData)}
+                    alt={image.alt}
+                  />
+                </label>
+                <input
+                  type="checkbox"
+                  id={`my-modal-${id}`}
+                  className="modal-toggle"
+                />
+                <div className="modal">
+                  <div className="modal-box relative w-11/12">
+                    <label
+                      htmlFor={`my-modal-${id}`}
+                      className="btn btn-sm btn-circle absolute right-2 top-2 z-10"
+                    >
+                      ✕
+                    </label>
+                    <GatsbyImage
+                      loading="lazy"
+                      className="min-w-full min-h-fit"
+                      image={getImage(
+                        image.src.childImageSharp.gatsbyImageData
+                      )}
+                      alt={image.alt}
+                      objectFit="contain"
+                    />
+                  </div>
+                </div>
+              </figure>
+            </div>
+          )}
+        </div>
       </div>
-      {image && (
-        <figure className="w-2/3 mx-auto rounded-t-xl">
-          <GatsbyImage
-            loading="lazy"
-            className="min-w-full min-h-fit aspect-square"
-            image={getImage(image.src.childImageSharp.gatsbyImageData)}
-            alt={image.alt}
-          />
-        </figure>
-      )}
     </div>
   );
 };

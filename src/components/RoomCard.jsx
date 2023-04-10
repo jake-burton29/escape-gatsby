@@ -1,7 +1,6 @@
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { useState } from "react";
-import { useTimeoutFn } from "react-use";
 import React from "react";
 import { Transition } from "@headlessui/react";
 
@@ -40,7 +39,7 @@ const RoomCard = (props) => {
                 <br />
                 {props.cost}
               </p>
-              <div className="card-actions justify-end pt-2">
+              <div className="card-actions justify-end md:justify-start pt-2">
                 <Link
                   to="/book"
                   className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black"
@@ -75,8 +74,7 @@ const RoomCard = (props) => {
               <h2 className="card-title text-bold bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent">
                 {props.title}
               </h2>
-              <p className="block mt-1 text-lg leading-tight font-medium text-gray-400 "></p>
-              <div className="card-actions justify-end pt-2">
+              <div className="card-actions pt-2">
                 <Link
                   to="/book"
                   className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black"

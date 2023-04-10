@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import RoomCard from "../components/RoomCard";
-import ReviewCarousel from "../components/ReviewCarousel";
 import RoomCardBack from "../components/RoomCardBack";
 import { graphql, Link, useStaticQuery } from "gatsby";
 export default function Home() {
@@ -26,27 +25,6 @@ export default function Home() {
       travelerLogo: file(relativePath: { eq: "images/TravelersRoomPic.jpeg" }) {
         childImageSharp {
           gatsbyImageData(width: 600, height: 600)
-        }
-      }
-      review1: file(relativePath: { eq: "images/Review1.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 2200, height: 800)
-        }
-      }
-
-      review2: file(relativePath: { eq: "images/Review2.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 3000, height: 800)
-        }
-      }
-      review3: file(relativePath: { eq: "images/Review3.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 2200, height: 800)
-        }
-      }
-      review4: file(relativePath: { eq: "images/Review4.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 2500, height: 900)
         }
       }
     }
@@ -106,15 +84,9 @@ export default function Home() {
         title="The Travler's Room"
         alt="Traveler's Room"
         players="This room is"
-        length="currently closed."
+        length="currently closed. &nbsp;"
       />
       <RoomCardBack />
-      <ReviewCarousel
-        image1={data.review1.childImageSharp.gatsbyImageData}
-        image2={data.review2.childImageSharp.gatsbyImageData}
-        image3={data.review3.childImageSharp.gatsbyImageData}
-        image4={data.review4.childImageSharp.gatsbyImageData}
-      />
     </Layout>
   );
 }
