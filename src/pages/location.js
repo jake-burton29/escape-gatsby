@@ -5,11 +5,11 @@ const location = () => {
   return (
     <Layout>
       <div class="container px-5 py-12 mx-auto">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center bg-neutral rounded-2xl p-3 mb-5">
           <h2 className="text-4xl font-bold tracking-tight sm:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500">
             The First Puzzle is to Find Us!
           </h2>
-          <p className="mt-2 mb-1 text-lg leading-7">
+          <p className=" font-bold mt-2 mb-1 text-lg leading-7">
             Our place can be tough to find!
           </p>
         </div>
@@ -22,7 +22,7 @@ const location = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <li>
-            <div className="card card-compact w-auto bg-base-100 shadow-xl">
+            <div className="card card-compact w-auto bg-neutral shadow-xl">
               <figure>
                 <GatsbyImage />
               </figure>
@@ -34,7 +34,7 @@ const location = () => {
             </div>
           </li>
           <li>
-            <div className="card card-compact w-auto bg-base-100 shadow-xl">
+            <div className="card card-compact w-auto bg-neutral shadow-xl">
               <figure>
                 <GatsbyImage />
               </figure>
@@ -46,7 +46,7 @@ const location = () => {
             </div>
           </li>
           <li>
-            <div className="card card-compact w-auto bg-base-100 shadow-xl">
+            <div className="card card-compact w-auto bg-neutral shadow-xl">
               <figure>
                 <GatsbyImage />
               </figure>

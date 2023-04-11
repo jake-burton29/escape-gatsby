@@ -34,7 +34,7 @@ const Reviews = () => {
   console.log(data.allDataJson.edges[0].node.reviews);
   return (
     <Layout>
-      <div className="hero min-w-screen bg-base-200 bg-inherit py-5">
+      <div className="container flex justify-center bg-neutral py-2 rounded-2xl mx-auto my-6">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-4xl font-bold bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent">

@@ -1,0 +1,45 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "title": "The Mine Trap",
+      "players": "Players: 4 - 10",
+      "length": "Game Length: 70 min",
+      "cost": "Cost per Person: $39.99 + tax",
+      "image": {
+        "src": "../images/MineTrapImage.jpeg",
+        "alt": "There is text on the top, saying, 'Now Featuring... The Mine Trap!' Below, there is a box filled with dynamite as well as a Miner hat. At the bottom, there is a 5 star rating with text underneath saying, 'Our Signature Room.'"
+      }
+    },
+    {
+      "id": 2,
+      "title": "The Great Pirate Escape",
+      "players": "Players: 4 - 8",
+      "length": "Game Length: 70 min",
+      "cost": "Cost per Person: $37.99 + tax",
+      "image": {
+        "src": "../images/PirateBootyImage.jpeg",
+        "alt": "There is text on the top, saying, 'Pirate Booty' Below, there is a wooden chest sorrounded by gold coins, as if stacked on a mountain of treasure. The chest is wrapped in chains, with a padlock keeping the chians tight. "
+      }
+    },
+    {
+      "id": 3,
+      "title": "The Parlor",
+      "players": "Players: 3 - 6",
+      "length": "Game Length: 70 min",
+      "cost": "Cost per Person: $37.99 + tax",
+      "image": {
+        "src": "../images/ParlorImage.jpeg",
+        "alt": "There is text on the top in red, saying, 'The Parlor'. Below, there is gray text, reading, 'A who-dunit'. On the right, there is a man in a hat and trench coat, standing in a a lit doorway. He is casting an ominous shadow over a chalk-outline of a body from a murder scene."
+      }
+    },
+    {
+      "id": 4,
+      "title": "The Travelor's Room",
+      "image": {
+        "src": "../images/TravelersRoomPic.jpeg",
+        "alt": "The image reads, 'Where in the world is Phil Landcaster?' In the center, there is a globe, covered by a sketch of a man in a detective hat and trench coat."
+      }
+    }
+  ]
+}

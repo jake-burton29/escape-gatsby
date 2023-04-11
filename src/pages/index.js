@@ -4,34 +4,61 @@ import RoomCard from "../components/RoomCard";
 import RoomCardBack from "../components/RoomCardBack";
 import { graphql, Link, useStaticQuery } from "gatsby";
 export default function Home() {
-  const data = useStaticQuery(graphql`
-    query {
-      mineLogo: file(relativePath: { eq: "images/MineTrapImage.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 600, height: 600)
-        }
-      }
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     mineLogo: file(relativePath: { eq: "images/MineTrapImage.jpeg" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(width: 600, height: 600)
+  //       }
+  //     }
 
-      pirateLogo: file(relativePath: { eq: "images/PirateBootyImage.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 600, height: 600)
-        }
-      }
-      parlorLogo: file(relativePath: { eq: "images/ParlorImage.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 600, height: 600)
-        }
-      }
-      travelerLogo: file(relativePath: { eq: "images/TravelersRoomPic.jpeg" }) {
-        childImageSharp {
-          gatsbyImageData(width: 600, height: 600)
+  //     pirateLogo: file(relativePath: { eq: "images/PirateBootyImage.jpeg" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(width: 600, height: 600)
+  //       }
+  //     }
+  //     parlorLogo: file(relativePath: { eq: "images/ParlorImage.jpeg" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(width: 600, height: 600)
+  //       }
+  //     }
+  //     travelerLogo: file(relativePath: { eq: "images/TravelersRoomPic.jpeg" }) {
+  //       childImageSharp {
+  //         gatsbyImageData(width: 600, height: 600)
+  //       }
+  //     }
+  //   }
+  // `);
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allDataJson {
+        edges {
+          node {
+            rooms {
+              cost
+              id
+              length
+              players
+              title
+              image {
+                alt
+                src {
+                  childImageSharp {
+                    gatsbyImageData(layout: CONSTRAINED)
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   `);
+  console.log(data.allDataJson.edges[1].node.rooms);
+
   return (
     <Layout>
-      <div className="hero min-w-screen bg-base-200 bg-inherit py-5">
+      <div className="w-[90%] flex justify-center bg-neutral py-2 rounded-2xl mx-auto my-6">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-4xl font-bold bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent">
@@ -55,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <RoomCard
+      {/* <RoomCard
         imageData={data.mineLogo.childImageSharp.gatsbyImageData}
         title="The Mine Trap"
         alt="The Mine Trap"
@@ -86,7 +113,10 @@ export default function Home() {
         players="This room is"
         length="currently closed. &nbsp;"
       />
-      <RoomCardBack />
+      <RoomCardBack /> */}
+      {data.allDataJson.edges[1].node.rooms.map((room) => (
+        <RoomCard key={room.id} room={room} image={room.image} />
+      ))}
     </Layout>
   );
 }

@@ -10,7 +10,9 @@ const Footer = () => {
         <Link to="/contact" className="link link-hover">
           Contact
         </Link>
-        <a className="link link-hover">Reviews</a>
+        <Link to="/reviews" className="link link-hover">
+          Reviews
+        </Link>
       </div>
       <div>
         <div className="grid grid-flow-col gap-4">
@@ -83,6 +85,8 @@ const Footer = () => {
         </div>
       </div>
       <div>
+        <span>136 Heber Ave #207</span>
+        <span>Park City, UT 84068</span>
         <p>Copyright © 2023 - All right reserved by Escape Room Park City</p>
       </div>
     </footer>

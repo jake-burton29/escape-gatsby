@@ -1,11 +1,12 @@
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import { useState } from "react";
 import React from "react";
 import { Transition } from "@headlessui/react";
 
-const RoomCard = (props) => {
+const RoomCard = ({ room, image }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const { id, title, cost, length, players } = room;
   // let [, , resetIsFlipped] = useTimeoutFn(() => setIsFlipped(true), 500);
   return (
     <Transition
@@ -18,28 +19,34 @@ const RoomCard = (props) => {
       leaveTo="opacity-0 scale-95"
     >
       {!isFlipped ? (
-        <div className="max-w-md mx-auto rounded-xl shadow-neutral shadow-lg overflow-hidden md:max-w-3xl my-3 group">
-          <div className="md:flex md:bg-neutral sm:bg-slate-100">
-            <div className="md:shrink-0">
+        <div className="max-w-md mx-auto rounded-xl shadow-neutral shadow-lg overflow-auto md:max-w-3xl my-3 group">
+          <div className="md:flex bg-neutral">
+            <figure className="flex justify-center rounded-xl">
               <GatsbyImage
                 loading="lazy"
-                className="h-fit w-full  md:h-full md:w-48"
-                image={props.imageData}
-                alt={props.alt}
+                className="w-fit h-fit rounded-t-xl"
+                image={getImage(image.src.childImageSharp.gatsbyImageData)}
+                alt={image.alt}
               />
-            </div>
-            <div className="p-4 bg-neutral">
+            </figure>
+
+            <progress
+              className="md:hidden progress bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 w-full"
+              value={0}
+              max="100"
+            ></progress>
+            <div className="p-4 bg-neutral flex flex-col">
               <h2 className="card-title text-bold bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent">
-                {props.title}
+                {title}
               </h2>
-              <p className="block mt-1 text-lg leading-tight font-medium text-gray-400 ">
-                {props.players}
+              <p className="block mt-1 text-lg leading-tight font-medium text-gray-400 md:align-bottom ">
+                {players}
                 <br />
-                {props.length}
+                {length}
                 <br />
-                {props.cost}
+                {cost}
               </p>
-              <div className="card-actions justify-end md:justify-start pt-2">
+              <div className="card-actions justify-end md:justify-start pt-2 mb-0">
                 <Link
                   to="/book"
                   className="btn border-none bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-black"
@@ -66,13 +73,13 @@ const RoomCard = (props) => {
               <GatsbyImage
                 loading="lazy"
                 className="h-fit w-full  md:h-full md:w-48"
-                image={props.imageData}
-                alt={props.alt}
+                image={getImage(image.src.childImageSharp.gatsbyImageData)}
+                alt={image.alt}
               />
             </div>
             <div className="p-4 bg-neutral">
               <h2 className="card-title text-bold bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 text-transparent">
-                {props.title}
+                {title}
               </h2>
               <div className="card-actions pt-2">
                 <Link

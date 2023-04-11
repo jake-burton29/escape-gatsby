@@ -3,15 +3,21 @@ import Layout from "../components/Layout";
 const faq = () => {
   return (
     <Layout>
-      <section class>
+      <section>
         <div class="container px-5 py-12 mx-auto">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="mx-auto max-w-2xl text-center bg-neutral rounded-2xl p-3">
             <h2 className="text-4xl font-bold tracking-tight sm:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500">
               Frequently Asked Questons
             </h2>
-            <p className="mt-2 mb-1 text-lg leading-7">
-              If you're question isn't here,contact us <br /> at
-              info@escaperoomparkcity.com <br /> or call&nbsp;
+            <p className="mt-2 mb-1 text-lg font-semibold leading-7">
+              If you're question isn't here, contact us <br /> at&nbsp;
+              <a
+                href="mailto:info@escaperoomparkcity.com"
+                className="font-semibold hover:underline text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 underline underline-offset-2"
+              >
+                info@escaperoomparkcity.com
+              </a>
+              <br /> or call&nbsp;
               <a
                 href="tel:4356040556"
                 className="font-semibold text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 underline underline-offset-2"
@@ -167,6 +173,105 @@ const faq = () => {
                     want a clear mind to play this game. We reserve the right to
                     eject anyone who we feel may be a danger to themselves or
                     others without a refund.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 py-2">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
+                <input type="checkbox" className="w-auto h-auto" />
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
+                  Do you sell gift certificates?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                    We do! To purchase a gift certificate, call 435-604-0556.
+                    Gift certificates can be for any amount, and are emailed to
+                    you.
+                  </p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
+                <input type="checkbox" className="w-auto h-auto" />
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
+                  How long does it take?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                    We have designed the escape experiences to last beyond the
+                    escape itself, so plan on being with us a little longer than
+                    the room time states. For 70-minute escapes, plan on being
+                    with us for 90 minutes. For 60-minute escapes, plan on being
+                    with us for 75 minutes. We do our best to start the game
+                    right on time so please make sure to plan ahead for parking
+                    and getting to the room.
+                  </p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
+                <input type="checkbox" className="w-auto h-auto" />
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
+                  How do I sign up?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                    You can either call us at 435-604-0556 or book online here!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 py-2">
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
+                <input type="checkbox" className="w-auto h-auto" />
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
+                  What if we only have 2 players?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                    Two players can have a great time in our rooms! Please keep
+                    in mind that it may be difficult. We want you to have a
+                    great time so our game masters will help when needed. In
+                    order for two people to play you must pay the minimum per
+                    room. If you are flexible with your time, we do have a
+                    workaround. The booking goes offline one hour before the
+                    start time. If you would like to call to see if it's
+                    available (or if we have enough staff) you may be able to
+                    pay the per-person pricing. Please keep in mind that either
+                    option does not guarantee that your party will have the room
+                    to themselves.
+                  </p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
+                <input type="checkbox" className="w-auto h-auto" />
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
+                  Do you host corporate or special events?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                    Sure do! We are a great and unique option for birthday and
+                    bachelor/bachelorette parties, anniversary celebrations,
+                    family reunions, and more! If you would like to customize
+                    your experience, call us at 435-604-0556 and we can make
+                    your special day spectacular! We can also recommend
+                    restaurants that are nearby, so please call for more info
+                    435-604-0556.
+                  </p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow border border-base-300 bg-neutral rounded-box  ">
+                <input type="checkbox" className="w-auto h-auto" />
+                <div className="collapse-title text-xl font-bold py-7 px-4 inline-block bg-clip-text  ">
+                  Why don't you offer refunds?
+                </div>
+                <div className="collapse-content">
+                  <p className="text-lg">
+                    Staff is hard to come by these days. (Are you looking for a
+                    fun job?) We schedule our staff according to bookings so
+                    cancellations are hard for us. We do try to accommodate as
+                    much as possible, but we need time to do so. Please be aware
+                    there will be change-of-room fees, if you can't make your
+                    scheduled appointment.
                   </p>
                 </div>
               </div>
