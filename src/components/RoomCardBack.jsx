@@ -1,12 +1,10 @@
 import { Transition } from "@headlessui/react";
 import { useState } from "react";
 import React from "react";
-function RoomCard() {
+function RoomCardBack() {
   const [isShowing, setIsShowing] = useState(false);
   return (
-    /* The `show` prop controls all nested `Transition.Child` components. */
     <Transition show={isShowing}>
-      {/* Background overlay */}
       <Transition.Child
         enter="transition-opacity ease-linear duration-300"
         enterFrom="opacity-0"
@@ -14,9 +12,7 @@ function RoomCard() {
         leave="transition-opacity ease-linear duration-300"
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
-      >
-        {/* ... */}
-      </Transition.Child>
+      ></Transition.Child>
 
       {/* Sliding sidebar */}
       <Transition.Child
@@ -26,10 +22,8 @@ function RoomCard() {
         leave="transition ease-in-out duration-300 transform"
         leaveFrom="translate-x-0"
         leaveTo="-translate-x-full"
-      >
-        {/* ... */}
-      </Transition.Child>
+      ></Transition.Child>
     </Transition>
   );
 }
-export default RoomCard;
+export default RoomCardBack;
